@@ -63,23 +63,16 @@
     }
   },
   {
-    "temperature": 34.34,
+    "temperature": 60.44,
     "location": {
-      "city": "London",
-      "country": "GB"
+      "city": "Alkmaar",
+      "country": "NL"
     }
   },
   {
     "temperature": 23.65,
     "location": {
       "city": "Purmerend",
-      "country": "NL"
-    }
-  },
-  {
-    "temperature": 60.44,
-    "location": {
-      "city": "Alkmaar",
       "country": "NL"
     }
   }
