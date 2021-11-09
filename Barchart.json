@@ -68,5 +68,12 @@
       "city": "London",
       "country": "GB"
     }
+  },
+  {
+    "temperature": 28.45,
+    "location": {
+      "city": "Purmerend",
+      "country": "NL"
+    }
   }
 ]
