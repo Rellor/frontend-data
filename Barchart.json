@@ -75,5 +75,12 @@
       "city": "Purmerend",
       "country": "NL"
     }
+  },
+  {
+    "temperature": 60.44,
+    "location": {
+      "city": "Alkmaar",
+      "country": "NL"
+    }
   }
 ]
