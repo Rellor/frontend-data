@@ -13,10 +13,11 @@ const g = svg.append('g')
 
 // Global variable for all data
 let data;
-
 // Scales setup
 const xscale = d3.scaleLinear().range([0, width]);
+//.scaleband() is om de bars te maken. De rangeround is voor de breedte en de padding is de plek tussen de bars
 const yscale = d3.scaleBand().rangeRound([0, height]).paddingInner(0.1);
+//.scalelinear() is hoe hoog de bars gaan worden. .range is hoever het gaat waar 0 het begin is en height het einde
 
 // Axis setup
 const xaxis = d3.axisTop().scale(xscale);
@@ -79,7 +80,7 @@ d3.selectAll('#filter-nl-only, #filter-us-only').on('change', function() {
   if  (checkednl === true && checkedus === true){
     const filtered_data = data.filter((d) => d.location.city === 'Alkmaar' || d.location.city === 'Purmerend');
     update(filtered_data);
-    
+
   } else if (checkednl === true){
     const filtered_data = data.filter((d) => d.location.city === 'Alkmaar');
     update(filtered_data);
