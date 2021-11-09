@@ -71,34 +71,30 @@ function update(new_data) {
 }
 
 //interactivity
-d3.select('#filter-us-only').on('change', function() {
-  // This will be triggered when the user selects or unselects the checkbox
-  const checked = d3.select(this).property('checked');
-  if (checked === true) {
-    // Checkbox was just checked
+d3.selectAll('#filter-nl-only, #filter-us-only').on('change', function() {
 
-    // Keep only data element whose country is US
-    const filtered_data = data.filter((d) => d.location.city === 'Purmerend');
+  const checkedus = d3.select('#filter-us-only').property('checked');
+  const checkednl = d3.select('#filter-nl-only').property('checked');
 
-    update(filtered_data);  // Update the chart with the filtered data
-  } else {
-    // Checkbox was just unchecked
-    update(data);  // Update the chart with all the data we have
-  }
-});
+  console.log('Checkednl:', checkednl);
+  console.log('Checkedus:', checkedus);
 
-d3.select('#filter-nl-only').on('change', function() {
-  // This will be triggered when the user selects or unselects the checkbox
-  const checked = d3.select(this).property('checked');
-  if (checked === true) {
-    // Checkbox was just checked
+  if  (checkednl === true && checkedus === true){
+    console.log("beide zijn true");
+    const filtered_data = data.filter((d) => d.location.city === 'Alkmaar' || d.location.city === 'Purmerend');
+    update(filtered_data);
 
-    // Keep only data element whose country is US
+  } else if (checkednl === true){
+    console.log("nl is true");
     const filtered_data = data.filter((d) => d.location.city === 'Alkmaar');
+    update(filtered_data);
 
-    update(filtered_data);  // Update the chart with the filtered data
+  } else if (checkedus === true) {
+    console.log("us is true");
+    const filtered_data = data.filter((d) => d.location.city === 'Purmerend');
+    update(filtered_data);
+
   } else {
-    // Checkbox was just unchecked
-    update(data);  // Update the chart with all the data we have
+    update(data);
   }
 });
