@@ -76,21 +76,15 @@ d3.selectAll('#filter-nl-only, #filter-us-only').on('change', function() {
   const checkedus = d3.select('#filter-us-only').property('checked');
   const checkednl = d3.select('#filter-nl-only').property('checked');
 
-  console.log('Checkednl:', checkednl);
-  console.log('Checkedus:', checkedus);
-
   if  (checkednl === true && checkedus === true){
-    console.log("beide zijn true");
     const filtered_data = data.filter((d) => d.location.city === 'Alkmaar' || d.location.city === 'Purmerend');
     update(filtered_data);
-
+    
   } else if (checkednl === true){
-    console.log("nl is true");
     const filtered_data = data.filter((d) => d.location.city === 'Alkmaar');
     update(filtered_data);
 
   } else if (checkedus === true) {
-    console.log("us is true");
     const filtered_data = data.filter((d) => d.location.city === 'Purmerend');
     update(filtered_data);
 
