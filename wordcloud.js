@@ -1,6 +1,7 @@
 // List of words
 d3.json('https://raw.githubusercontent.com/ajzbc/kanye.rest/master/quotes.json').then((json) => {
-  myWords = json;
+  myWords = json + '';;
+  var wordsSeperate = myWords.split(" ");
 
 console.log('myWords:', myWords);
 // set the dimensions and margins of the graph
@@ -19,7 +20,7 @@ var svg = d3.select("body").append("svg")
 // Constructs a new cloud layout instance. It run an algorithm to find the position of words that suits your requirements
 var layout = d3.layout.cloud()
   .size([width, height])
-  .words(myWords.map(function(d) { return {text: d}; }))
+  .words(wordsSeperate.map(function(d) { return {text: d}; }))
   .padding(10)
   .fontSize(20)
   .on("end", draw);
