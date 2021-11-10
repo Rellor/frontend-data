@@ -1,9 +1,9 @@
 // List of words
 d3.json('https://raw.githubusercontent.com/ajzbc/kanye.rest/master/quotes.json').then((json) => {
-  myWords = json + '';;
+  myWords = json + '';
   var wordsSeperate = myWords.split(" ");
-
-console.log('myWords:', myWords);
+  var wordsRemovedI = wordsSeperate.toString().replace('All' || 'you', " ")
+  console.log('wordsRemovedI:', wordsRemovedI);
 // set the dimensions and margins of the graph
 var margin = {top: 10, right: 10, bottom: 10, left: 10},
     width = 1000 - margin.left - margin.right,
