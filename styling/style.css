@@ -13,3 +13,8 @@ rect:hover {
 .axis {
   font-size: smaller;
 }
+
+svg {
+  position: absolute;
+  left: 8%;
+}

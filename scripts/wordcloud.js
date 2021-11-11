@@ -2,12 +2,11 @@
 d3.json('https://raw.githubusercontent.com/ajzbc/kanye.rest/master/quotes.json').then((json) => {
   myWords = json + '';
   var wordsSeperate = myWords.split(" ");
-  var wordsRemovedI = wordsSeperate.toString().replace('All' || 'you', " ")
-  console.log('wordsRemovedI:', wordsRemovedI);
+  console.log('wordsRemovedI:', wordsSeperate);
 // set the dimensions and margins of the graph
 var margin = {top: 10, right: 10, bottom: 10, left: 10},
-    width = 1000 - margin.left - margin.right,
-    height = 1000 - margin.top - margin.bottom;
+    width = 1920 - margin.left - margin.right,
+    height = 1080 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 var svg = d3.select("body").append("svg")
@@ -21,7 +20,7 @@ var svg = d3.select("body").append("svg")
 var layout = d3.layout.cloud()
   .size([width, height])
   .words(wordsSeperate.map(function(d) { return {text: d}; }))
-  .padding(10)
+  .padding(2)
   .fontSize(20)
   .on("end", draw);
 layout.start();
