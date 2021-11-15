@@ -73,10 +73,10 @@ function update(new_data) {
 
 //interactivity
 d3.selectAll('#filter-nl-only, #filter-us-only').on('change', function() {
-
+//selecteer de id's filter-nl-only en filter-us-only en wanneer deze id's veranderen voer een functie uit
   const checkedus = d3.select('#filter-us-only').property('checked');
   const checkednl = d3.select('#filter-nl-only').property('checked');
-
+//const die aangeeft dat de id's zijn aangeklikt
   if  (checkednl === true && checkedus === true){
     const filtered_data = data.filter((d) => d.location.city === 'Alkmaar' || d.location.city === 'Purmerend');
     update(filtered_data);

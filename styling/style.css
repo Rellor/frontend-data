@@ -1,5 +1,4 @@
 body {
-  width: 800px;
   margin: 25px auto;
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
@@ -16,5 +15,12 @@ rect:hover {
 
 svg {
   position: absolute;
-  left: 8%;
+  left: 0%;
+  top: 0%;
+}
+
+.filterswordcloud {
+  position: absolute;
+  left: 2%;
+  bottom: 5%;
 }
