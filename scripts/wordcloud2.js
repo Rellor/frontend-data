@@ -73,11 +73,9 @@ function draw(words) {
     	.data(words)
       .enter().append("text")
       .style("fill", function(d) {
-          console.log(d)
           return color(d.size);
         })
       .style("font-size", function(d) {
-          console.log(d)
           return textScale(d.size) + "em";
         })
       .attr("text-anchor", "middle")
@@ -92,5 +90,28 @@ function draw(words) {
       })
       .style('opacity', 1)
 }
+
+function update(){
+
+      // For each check box:
+      d3.selectAll(".checkbox").each(function(d){
+        cb = d3.select(this);
+        grp = cb.property("name")
+        // If the box is check, I show the group
+        if(cb.property("checked")){
+          console.log(grp, "checked!");
+        // Otherwise I hide it
+        }else{
+          console.log(grp, "niks..");
+        }
+      })
+    }
+
+    // When a button change, I run the update function
+    d3.selectAll(".checkbox").on("change",update);
+
+    // And I initialize it at the beginning
+    update()
+
 
 });

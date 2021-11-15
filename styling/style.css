@@ -17,10 +17,12 @@ svg {
   position: absolute;
   left: 0%;
   top: 0%;
+  z-index: 0;
 }
 
 .filterswordcloud {
   position: absolute;
   left: 2%;
   bottom: 5%;
+  z-index: 100
 }
