@@ -1,7 +1,7 @@
 body {
   margin: 25px auto;
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  cursor: crosshair; 
+  cursor: crosshair;
 }
 rect {
   fill: steelblue;
@@ -26,4 +26,9 @@ svg {
   left: 2%;
   bottom: 5%;
   z-index: 100
+}
+
+header {
+  position: absolute;
+  z-index: 100;
 }
