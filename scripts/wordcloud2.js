@@ -2,14 +2,15 @@
 
 // begin code gehaald van https://www.d3-graph-gallery.com/graph/wordcloud_basic.html
 
+  import { wordsSeperateModule } from './modules/wordsSeperateModule.js';
+
   const finalData = []
   const counts = {}
 
 d3.json('https://raw.githubusercontent.com/ajzbc/kanye.rest/master/quotes.json').then((json) => {
   myWords = json + ''
 
-  const wordsSeperate = myWords.split(" ")
-  const wordsRemovedI = wordsSeperate.toString().replace(/["%?!.0&123456789"]/g, ' ').toLowerCase().replaceAll(' ', '').split(',').filter(word => !!word.length)
+  const wordsRemovedI = wordsSeperateModule.toString().replace(/["%?!.0&123456789"]/g, ' ').toLowerCase().replaceAll(' ', '').split(',').filter(word => !!word.length)
   const toFindDuplicates2 = wordsRemovedI => wordsRemovedI.filter((item, index) => wordsRemovedI.indexOf(item) == index)
   const duplicateElementa2 = toFindDuplicates2(wordsRemovedI)
 
