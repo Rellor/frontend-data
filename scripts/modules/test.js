@@ -1,0 +1,1 @@
+const wordsSeperate = myWords.split(" ")

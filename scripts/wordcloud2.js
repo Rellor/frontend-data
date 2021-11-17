@@ -2,34 +2,27 @@
 
 // begin code gehaald van https://www.d3-graph-gallery.com/graph/wordcloud_basic.html
 
-  import { wordsSeperateModule } from './modules/wordsSeperateModule.js';
-
   const finalData = []
   const counts = {}
 
 d3.json('https://raw.githubusercontent.com/ajzbc/kanye.rest/master/quotes.json').then((json) => {
   myWords = json + ''
 
-  const wordsRemovedI = wordsSeperateModule.toString().replace(/["%?!.0&123456789"]/g, ' ').toLowerCase().replaceAll(' ', '').split(',').filter(word => !!word.length)
+  const wordsSeperate = myWords.split(" ")
+  const wordsRemovedI = wordsSeperate.toString().replace(/["%?!.0&123456789"]/g, ' ').toLowerCase().replaceAll(' ', '').split(',').filter(word => !!word.length)
   const toFindDuplicates2 = wordsRemovedI => wordsRemovedI.filter((item, index) => wordsRemovedI.indexOf(item) == index)
   const duplicateElementa2 = toFindDuplicates2(wordsRemovedI)
 
-  wordsRemovedI.forEach((x) => { counts[x] = (counts[x] || 0) + 1; })
+  wordsRemovedI.forEach((x) => { counts[x] = (counts[x] || 0) + 1 })
 
   wordsRemovedI.forEach(word => {
     if(finalData.some(el => el.word === word)) {
       finalData.find(el => {
-         if(el.word === word) {
-           el.amount = el.amount + 1
-         }
+         if(el.word === word) { el.amount = el.amount + 1 }
       })
     } else {
-      finalData.push({
-        word: word,
-        amount: 1
-      })
+      finalData.push({ word: word, amount: 1 })
     }
-
   })
 
   const margin = {top: 10, right: 10, bottom: 10, left: 10},
@@ -53,11 +46,11 @@ d3.json('https://raw.githubusercontent.com/ajzbc/kanye.rest/master/quotes.json')
 
   const layout = d3.layout.cloud()
     .size([width, height])
-    .words(finalData.map((d) => { return {text: d.word, size: d.amount}; }))
+    .words(finalData.map((d) => { return {text: d.word, size: d.amount} }))
     .padding(2)
     .fontSize((d) => { return d.size })
     .on("end", update)
-  layout.start();
+  layout.start()
 
   function update(words) {
     d3.select("#wordcloud").remove()
@@ -87,14 +80,15 @@ d3.json('https://raw.githubusercontent.com/ajzbc/kanye.rest/master/quotes.json')
               return "translate(" + [d.x, d.y] + ")"
             })
           .style('opacity', 0)
-          .text(function(d) { return d.text; })
+          .text(function(d) { return d.text })
           .transition()
           .delay(function(d, i) {
             return i * 5
           })
           .style('opacity', 1)
 
-        var data;
+        var data
+        const filtered_data = []
 
         //interactivity
         d3.selectAll('.check1, .check2, .check3').on('change', () => {
@@ -111,48 +105,48 @@ d3.json('https://raw.githubusercontent.com/ajzbc/kanye.rest/master/quotes.json')
               .words(filtered_data.map((d) => { return {text: d.word, size: d.amount} }))
               .padding(2)
               .fontSize((d) => { return d.size })
-              .on("end", update);
-            layout.start();
+              .on("end", update)
+            layout.start()
 
           } else if (checked1 === true){
-            const filtered_data = finalData.filter((d) => d.amount === 1);
+            const filtered_data = finalData.filter((d) => d.amount === 1)
             let layout = d3.layout.cloud()
               .size([width, height])
-              .words(filtered_data.map((d) => { return {text: d.word, size: d.amount}; }))
+              .words(filtered_data.map((d) => { return {text: d.word, size: d.amount} }))
               .padding(2)
               .fontSize((d) => { return d.size })
-              .on("end", update);
-            layout.start();
+              .on("end", update)
+            layout.start()
 
           } else if (checked2 === true) {
-            const filtered_data = finalData.filter((d) => d.amount > 20);
+            const filtered_data = finalData.filter((d) => d.amount > 20)
             let layout = d3.layout.cloud()
               .size([width, height])
-              .words(filtered_data.map((d) => { return {text: d.word, size: d.amount}; }))
+              .words(filtered_data.map((d) => { return {text: d.word, size: d.amount} }))
               .padding(2)
               .fontSize((d) => { return d.size })
-              .on("end", update);
-            layout.start();
+              .on("end", update)
+            layout.start()
 
           } else if (checked3 === true) {
-            const filtered_data = finalData.filter((d) => d.word === "sex" );
+            const filtered_data = finalData.filter((d) => d.word === "sex" )
             let layout = d3.layout.cloud()
               .size([width, height])
-              .words(filtered_data.map((d) => { return {text: d.word, size: d.amount}; }))
+              .words(filtered_data.map((d) => { return {text: d.word, size: d.amount} }))
               .padding(2)
               .fontSize((d) => { return d.size })
-              .on("end", update);
-            layout.start();
+              .on("end", update)
+            layout.start()
 
           } else {
             let layout = d3.layout.cloud()
               .size([width, height])
-              .words(finalData.map((d) => { return {text: d.word, size: d.amount}; }))
+              .words(finalData.map((d) => { return {text: d.word, size: d.amount} }))
               .padding(2)
               .fontSize((d) => { return d.size })
-              .on("end", update);
-              layout.start();
+              .on("end", update)
+              layout.start()
           }
-        });
+        })
       }
-});
+})
