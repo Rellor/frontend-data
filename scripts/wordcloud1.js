@@ -78,7 +78,7 @@ const layout = d3.layout.cloud()
      return d.size
    })
   // geef elk woord een padding van 2 en een fontsize die groter word op basis van de hoeveelheid size;
-  .on("end", draw);
+  .on("end", draw)
   // op het einde van de transition de callback draw meegeven;
 layout.start();
 
@@ -96,6 +96,14 @@ function draw(words) {
           return textScale(d.size) + "em";
         })
         .attr("text-anchor", "middle")
+        .on('mouseover', function(d){
+        var nodeSelection = d3.select(this).style('fill', "blue")
+        nodeSelection.select("text").style('opacity', 1)
+        })
+        .on('mouseout', function(d){
+        var nodeSelection = d3.select(this).style('fill', "black")
+        nodeSelection.select("text").style('opacity', 1)
+        })
         .attr("transform", function(d) {
           //geen rotate
           return "translate(" + [d.x, d.y] + ")";
@@ -110,5 +118,10 @@ function draw(words) {
         })
         .style('opacity', 1)
         // delay aanamken die ervoor zorgt dat er een delay is per woord dat verschijnt
+
+}
+
+function update() {
+
 }
 });
