@@ -1,0 +1,542 @@
+//NAV
+# 🗂️ Project
+**[Home](https://github.com/Rellor/frontend-data/wiki)**<br>
+**[Peer review](https://github.com/Rellor/frontend-data/wiki/Peer-review)<br>**
+**[Rubric](https://github.com/Rellor/frontend-data/wiki/Rubric)**
+
+# 📖 Logboek
+**[Logboek](https://github.com/Rellor/frontend-data/wiki/Logboek)**
+
+# 🔎 Research
+**[SVG](https://github.com/Rellor/frontend-data/wiki/SVG)**<br>
+**[D3](https://github.com/Rellor/frontend-data/wiki/D3)**<br>
+**[D3 Force](https://github.com/Rellor/frontend-data/wiki/D3-force)**
+
+//HOME
+![Giant dad](https://i.makeagif.com/media/8-09-2015/wZXidh.gif)
+
+# 🗂️ Project
+**[Home](https://github.com/Rellor/frontend-data/wiki)**<br>
+**[Peer review](https://github.com/Rellor/frontend-data/wiki/Peer-review)<br>**
+**[Rubric](https://github.com/Rellor/frontend-data/wiki/Rubric)**
+
+# 📖 Logboek
+**[Logboek](https://github.com/Rellor/frontend-data/wiki/Logboek)**
+
+# 🔎 Research
+**[SVG](https://github.com/Rellor/frontend-data/wiki/SVG)**<br>
+**[D3](https://github.com/Rellor/frontend-data/wiki/D3)**<br>
+**[D3 Force](https://github.com/Rellor/frontend-data/wiki/D3-force)**
+
+//PEER REVIEW
+### [Tom](https://github.com/Tomvandenberg11)
+**Ontvangen feedback:**
+- Logboek
+Ik moet proberen mijn logboek elke dag bij te houden (ik mis een paar dagen van deze week).
+
+- Consistentie
+Ik moet proberen door mijn code consistent te blijven. Ik heb bijvoorbeeld bij bepaalde regels een ; en andere weer niet.
+
+- ES6 functies
+Ik moet proberen ouderwetse functies te schrijven als arrow functions.
+
+- Eigen comments
+Het is handig om comments in eigen woorden op te schrijven zodat ik weet wat het betekend.
+
+**Gegeven feedback:**
+- Index
+Het is niet heel noodzakelijk maar je zou nog een aparte index kunnen maken met navigatie zodat je alles in een website kan zien!
+
+- README
+Readme gaat de goede kant op maar er staan nog een aantal lege delen!
+
+- Comments
+Probeer in de code comments te plaatsen zodat je (of anderen) weet wat de code doet!
+
+- Wiki
+Probeer je wiki nog even bij te werken en je onderzoek op te schrijven!
+
+### [Randy](https://github.com/randy554)
+**Gegeven feedback:**
+- Logboek
+Vergeet niet je logboek te updaten!
+
+- Comments
+Ik zou de comments in een taal zetten (in index.html is het nl en in index.js is het en)
+
+- README
+De README is momenteel deels leeg, vergeet die niet!
+
+- Commits
+De commits die je doet zien er goed uit! Ik zal alleen opletten dat je vaak genoeg dingen commit.
+
+//RUBRIC
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th><strong>1-2</strong></th>
+      <th><strong>3-4</strong></th>
+      <th><strong>5-6</strong></th>
+      <th><strong>7-8</strong></th>
+      <th><strong>9-10</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th align="center" scope="row"><strong>Application</strong> of subject matter</th>
+      <td align="center">Git <strong>and d3 are used</strong>; the project runs without errors; <strong>data is loaded with d3</strong>; there is a representation of data</td>
+      <td align="center"><strong>Data is rendered with d3</strong>; interpreting the representation is easier that interpreting the data itself</td>
+      <td align="center">Data is transformed; the data in the visualization is changed using the d3 update pattern to make an <strong>interactive representation.</strong></td>
+      <td align="center">Representation and <strong>use of d3</strong> go beyond an example: there are demonstrable additions like well-chosen interaction methods, animation, multiple chart types, or user input</td>
+      <td align="center">😱<br>The way the student applies subject matter  is more advanced than what they were taught in class; let’s switch places</td>
+    </tr>
+    <tr>
+      <th align="center" scope="row">Understanding</th>
+      <td align="center">There is substantial own code; the student can explain the code that exists</td>
+      <td align="center">The student can explain some parts of their code, how some parts works together, and some technical choices</td>
+      <td align="center">The student can explain every part of their code, how everything works together, and why software is used instead of alternatives; the project is structured logically</td>
+      <td align="center">The project is complex but can easily be understood; alternatives to software covered in class was used that were great choices</td>
+      <td align="center">🤓<br>The student deeply understands JavaScript and a geeky / nerdy conversation can be held about this</td>
+    </tr>
+    <tr>
+      <th align="center" scope="row">Quality</th>
+      <td align="center">The project is handed in on time, working, documented, and on GitHub</td>
+      <td align="center">Code style is consistent; code and project  are partially documented</td>
+      <td align="center">Code adheres to standards; docs cover what the project is and does</td>
+      <td align="center">Code quality is good and enforced; docs are useful and professional</td>
+      <td align="center">📚<br>Code and docs both read like great books</td>
+    </tr>
+    <tr>
+      <th align="center" scope="row">Process</th>
+      <td align="center">Process is partially documented</td>
+      <td align="center">Process is properly documented</td>
+      <td align="center">Choices are evaluated and documented; progress is demonstrated; Work tells a tory</td>
+      <td align="center">Significant progress or iterations are demonstrated; Storytelling principles are applied</td>
+      <td align="center">💪<br>What you did this course is amazing; Teachers are in awe of your progress</td>
+    </tr>
+  </tbody>
+</table>
+
+//LOGBOEK
+## Dag 1: 08/11/2021
+
+### Standup/Checkout: Het ging goed vandaag met iedereen. Tom en ik lopen een beetje tegen react aan maar verder gaat het goed met het opzetten van het project bij iedereen.
+
+### Wat heb ik gedaan?
+- Github setup (wiki, README, branches)
+- Svg onderzoek
+- React setup
+- Project opgezet
+
+### Hoe is het gegaan?
+Best goed, ben niet toegekomen aan het schrijven van code maar heb wel een hoop onderzoek kunnen doen. Ook staat mijn project en heb ik react opgezet!
+
+### Stukje(s) code:
+```
+//Vandaag geen code...
+```
+
+## Dag 2: 09/11/2021
+
+### Standup/Checkout: We waren met wat minder mensen vandaag. Een deel was ziek namelijk. Vandaag waren we druk geweest met de barchart die we hebben gekregen als voorbeeld.
+
+### Wat heb ik gedaan?
+Vandaag ben ik eerst bezig geweest met react en had ik daarin een cirkel gemaakt. Ik ben er alleen achter gekomen dat react leren wel veel extra werk is die ook later kan. Daarom ben ik van react afgestapt en ben ik begonnen met de bar chart opdracht. Hierin heb ik een eigen json ingeladen en op die data ook 2 verschillende data's gefilterd.
+
+### Hoe is het gegaan?
+Eerst erg moeizaam met react maar toen ik daar vanaf gestapt was ging alles eigenlijk wel lekker. Ik vond het best leuk om mijn filtertjes proberen toe te voegen aan de chart :)
+
+### Stukje(s) code:
+
+```javascript
+d3.selectAll('#filter-nl-only, #filter-us-only').on('change', function() {
+//selecteer de id's filter-nl-only en filter-us-only en wanneer deze id's veranderen voer een functie uit
+  const checkedus = d3.select('#filter-us-only').property('checked');
+  const checkednl = d3.select('#filter-nl-only').property('checked');
+//const die aangeeft dat de id's zijn aangeklikt
+  if  (checkednl === true && checkedus === true){
+    const filtered_data = data.filter((d) => d.location.city === 'Alkmaar' || d.location.city === 'Purmerend');
+    update(filtered_data);
+//wanneer beide checkboxen zijn aangevinkt filtert de data alleen maar op alkmaar en purmerend en zijn alleen die 2 te zien
+  } else if (checkednl === true){
+    const filtered_data = data.filter((d) => d.location.city === 'Alkmaar');
+    update(filtered_data);
+//wanneer nl gechecked is alleen maar alkmaar laten zien
+  } else if (checkedus === true) {
+    const filtered_data = data.filter((d) => d.location.city === 'Purmerend');
+    update(filtered_data);
+//wanneer us gechecked is alleen maar purmerend laten zien
+  } else {
+    update(data);
+  }
+//wanneer er niks gechecked is de normale data laten zien
+```
+
+## Dag 3: 10/11/2021
+
+### Standup/Checkout:
+Het gaat verrassend goed met iedereen. We zijn allemaal druk bezig met d3 en helpen elkaar waar nodig!
+
+### Wat heb ik gedaan?
+Vandaag had ik 2 taken. Het omdraaien van de bar chart en het maken van een wordcloud. Eerst ging de bar chart erg moeizaam omdat ik te erg bezig was met mijn oude code. Vervolgens kreeg ik de tip van robert om te kijken naar aparte code van een bar chart die omhoog gaat. Met hulp van een voorbeeld is het me ook toen gelukt om mijn data te laden in een bar chart die omhoog staat! Vervolgens ben ik verder gegaan met mijn eindopdracht. Dit gaat een wordcloud worden. Het was me gelukt om alle zinnen te laten zien. Vervolgens ging ik steeds een stapje verder door woorden te laten zien. En daarna door bepaalde woorden te filteren.
+
+### Hoe is het gegaan?
+Echt super goed! Ik ben een stuk verder gekomen dan ik had verwacht en de word cloud is perfect voor mijn idee!
+
+### Stukje(s) code:
+Dit is het aanmaken van de x en y as
+```javascript
+  // X axis
+  var xscale = d3.scaleBand()
+//aanmaken van de xscale var en daar d3.scaleBand() aan hangen met alle data hieronder
+  .rangeRound([0, height])
+  .paddingInner(0.1)
+  .domain(new_data.map((d) => d.location.city));
+//de svg een group geven en daar een transition en transform op zetten
+  svg.append("g")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(xscale))
+
+  // Add Y axis
+//d3.scaleLinear() maken voor de hoogte van de bars. Hierin geef je de breedte mee en vervolgend geef je met het domain de hoogte aan op basis van de temperatuur. Daarna call je deze als de yscale
+  var yscale = d3.scaleLinear()
+  .range([width, 0])
+  .domain([0, d3.max(new_data, (d) => d.temperature)]);
+  svg.append("g")
+    .call(d3.axisLeft(yscale));
+```
+
+## Dag 4: 11/11/2021
+
+### Standup/Checkout: We gaan allemaal wel oke vandaag. Alleen Randy liep tegen zijn databron aan. Deze was erg lastig om mee te werken. Verder was het voor iedereen een goede dag!
+
+### Wat heb ik gedaan?
+Vandaag begon ik met het opschonen van mijn mappen. Alles stond los en het was een beetje onoverzichtelijk. Vervolgens ben ik bezig geweest met het filteren van verschillende woorden en tekens uit de tekst. Ook heb ik bij alle woorden de hoofdletters weg gehaald. Vervolgens is het me met de hulp van robert gelukt om woorden groter/kleiner te maken op basis van de hoeveelheid dat de woorden voorkomen.
+
+### Hoe is het gegaan?
+Ging erg lekker. Vandaag een hoop voortgang gemaakt!
+
+### Stukje(s) code:
+filteren van data
+```javascript
+const wordsSeperate = myWords.split(" ");
+  // maak wordsRemovedI aan waarin hij wordsSeperate pakt. Er een string van maakt. Vervolgens replace je ?!.0&123456789 met een leeg vakje en replace je die weer met een helemaal leeg vak. Daarna maak je weer een Array aan met split en filter je de plekken waar words leeg is;
+  const wordsRemovedI = wordsSeperate.toString().replace(/["%?!.0&123456789"]/g, ' ').toLowerCase().replaceAll(' ', '').split(',').filter(word => !!word.length)
+
+  // telt de hoevaak een woord langskomt
+  const counts = {};
+  wordsRemovedI.forEach(function (x) { counts[x] = (counts[x] || 0) + 1; });
+  console.log(counts)
+
+  // Het filteren van dubbelle woorden en deze houden. Vervolgens de rest verwijderen die niet dubbel is.
+  // const toFindDuplicates = wordsRemovedI => wordsRemovedI.filter((item, index) => wordsRemovedI.indexOf(item) !== index)
+  // const duplicateElementa = toFindDuplicates(wordsRemovedI);
+
+  // Het filteren van dubbelle woorden en deze houden. Vervolgens deze woorden maar 1 keer laten zien.
+  const toFindDuplicates2 = wordsRemovedI => wordsRemovedI.filter((item, index) => wordsRemovedI.indexOf(item) == index)
+  const duplicateElementa2 = toFindDuplicates2(wordsRemovedI);
+```
+fontsize verschillend maken
+```javascript
+  const finalData = []
+
+  wordsRemovedI.forEach(word => {
+//voor elk word
+    if(finalData.some(el => el.word === word)) {
+      //dit is een loop die loopt wanneer el.word gelijk is aan word binnen wordsRemovedI
+      finalData.find(el => {
+         if(el.word === word) {
+           console.log('test')
+           el.amount = el.amount + 1
+           //als el.word gelijk staat aan word dan zet je de amount van het element met een meer totdat er geen woord meer is. Hierdoor tel je hoeveel heer het woord er is
+         }
+      })
+    } else {
+      finalData.push({
+        word: word,
+        amount: 1
+        //anders push je het woord gewoon door zonder te loopen en geef je de amount 1 mee
+      })
+    }
+
+  })
+```
+
+## Dag 5: 12/11/2021
+
+### Standup/Checkout: Vandaag was ik ziek
+
+### Wat heb ik gedaan?
+Ik was vandaag helaas ziek en heb daarom niet veel kunnen doen. Ben een beetje bezig geweest met github maar heb niet al te veel gedaan.
+
+### Hoe is het gegaan?
+Wat ik had gedaan was goed gelukt alleen ik hen vrij weinig gedaan helaas.
+
+### Stukje(s) code:
+```
+//Vandaag geen stukje code...
+```
+
+## Dag 7: 15/11/2021
+
+### Standup/Checkout: Iedereen doet z'n ding en het gaat lekker. Een aantal hebben al dingen die ze kunnen laten zien en het ziet er cool uit!
+
+### Wat heb ik gedaan?
+Vandaag stond helemaal in het thema van filters en checkboxen. Verder ben ik ook bezig geweest met de opmaak van mijn woorden. Ik heb het voor elkaar gekregen dat de kleur van een woord veranderd op basis van de hoeveelheid het woord voorkomt!
+
+### Hoe is het gegaan?
+Vandaag was erg lastig maar ging wel goed!
+
+### Stukje(s) code:
+```javascript
+//color aanmaken met een range van 2 kleuren voor de kleur van de letters
+  const color = d3.scaleLinear()
+    .domain([1, 60])
+    .range([ "black", "red"])
+//geef een stijl element aan de group met color op basis van de woord grote
+   .style("fill", function(d) {
+    return color(d.size)
+   })
+```
+
+## Dag 7: 16/11/2021
+
+### Standup/Checkout:
+Vandaag ging het best goed met iedereen. Er waren wel wat dingen waar mensen tegenaan liepen dus daar gaan een aantal naar kijken!
+
+### Wat heb ik gedaan?
+Vandaag ben ik bezig geweest met het filteren van de data van mijn wordcloud en het updaten van mijn README / WIKI. Daar ben ik de hele dag mee bezig geweest.
+
+### Hoe is het gegaan?
+Het maken van het filter was niet goed gegaan. Ik ben niet echt verder gekomen helaas :( Verder ging het werken aan de README en de WIKI Wel goed. Daar ben ik een stuk verder gekomen dus dat is top!
+
+### Stukje(s) code:
+```
+//Alle code die ik heb gebruikt doet het nog niet dus geen stukje code vandaag ):
+```
+
+## Dag 8: 17/11/2021
+
+### Standup/Checkout:
+Opkomst was wat minder maar de mensen die er waren hadden veel voor elkaar kunnen krijgen!
+
+### Wat heb ik gedaan?
+Vandaag is het me met hulp van de docent gelukt om de filters aan de praat te krijgen! Ik kan nu data toevoegen en verwijderen met filters! Verder ben ik bezig geweest met het opschonen van mijn code en had ik even gekeken naar modules.
+
+### Hoe is het gegaan?
+Vandaag was een vermoeiende dag maar ik heb wel echt veel voor elkaar gekregen!
+
+### Stukje(s) code:
+```javascript
+//In dit stukje zie je de if voor wanneer elke checkbox is aangevinkt. Vervolgens filtered de data bepaalde woorden en vervolgens word er een nieuwe layout gemaakt.
+if  (checked1 === true && checked2 === true && checked3 === true){
+  const filtered_data = finalData.filter((d) => d.amount === 1 || d.amount > 20)
+   let layout = d3.layout.cloud()
+     .size([width, height])
+     .words(filtered_data.map((d) => { return {text: d.word, size: d.amount} }))
+     .padding(2)
+     .fontSize((d) => { return d.size })
+     .on("end", update)
+    layout.start()
+}
+```
+
+## Dag 9: 18/11/2021
+
+### Standup/Checkout:
+Niet veel mensen waren er vandaag...
+
+### Wat heb ik gedaan?
+Ik ben bezig geweest met mijn WIKI, README en mijn code. Voor de wiki ben ik gaan werken aan d3-force, peer reviews en het logboek. Verder heb ik de readme geupdate en ben ik mijn code gaan opschonen en had ik een begin gemaakt met d3-force
+
+### Hoe is het gegaan?
+Ging lekker! nog een hoop afgekregen vandaag
+
+### Stukje(s) code:
+Dit is van het voorbeeld van d3-force
+```javascript
+var simulation = d3.forceSimulation(nodes)
+	.force('charge', d3.forceManyBody().strength(-2))
+	.force('center', d3.forceCenter(width / 10, height / 10))
+	.on('tick', ticked);
+//simulation aanmaken
+
+function updateNodes() {
+	u = d3.select('.nodes')
+		.selectAll('text')
+		.data(nodes)
+		.join('text')
+		.text(function(d) {
+			return d.name
+		})
+		.attr('x', function(d) {
+			return d.x
+		})
+		.attr('y', function(d) {
+			return d.y
+		})
+		.attr('dy', function(d) {
+			return 5
+		});
+}
+
+function ticked() {
+	updateNodes()
+}
+//update function aanmaken en aanroepen
+```
+
+//SVG
+Svg staat voor Scalable Vector Graphics. Omdat svg met vectors werkt blijven afbeeldingen scherp hoe groot, klein of ingezoomd ze ook zijn.
+
+Binnen html heb je de `<svg>` tag. Hiermee start je een svg. Binnen die tag kan je weer vormen plaatsen. Een paar voorbeelden zijn:
+
+Circle:<br>
+`<circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />`
+
+Rectangle:<br>
+`<rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />`
+
+Star:<br>
+`<polygon points="100,10 40,198 190,78 10,78 160,198" style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />`
+
+Verdere elementen die je kan vinden staan in [Deze](https://developer.mozilla.org/en-US/docs/Web/SVG/Element#descriptive_elements) link.
+
+[W3 schools SVG](https://www.w3schools.com/html/html5_svg.asp)
+
+//D3
+D3 is een javascript library voor datavisualisatie. Je kan een svg, een canvas of html tot leven brengen met deze tool. D3 maakt gebruik van data driven elementen om de DOM te manipuleren.
+
+## Data
+Het ophalen van data met d3 is erg goed te doen. Het ophalen van een json gaat namelijk zo:<br>
+`values = FileAttachment("values@1.json").json()`
+
+Ook kan je bij het ophalen van een array bepaalde data meegeven zoals `.min` `.max` en `.median`:<br>
+`[d3.min(values), d3.median(values), d3.max(values)]`
+
+## Scales
+Je kan via .map een specefiek stukje data pakken. Een mooi voorbeeld van dit is:
+`fruits.map(d => d.count) // the count dimension (quantitative)`
+Hier map je specefiek .count uit de data.
+
+Er zijn ook nog 2 belangrijke scales als je met bijvoorbeeld een bar chart gaat werken.
+### .ScaleLinear()
+Deze scale kan je gebruiken bij tellingen. De grootte van deze scale zal ook gelijk staan aan de value die erop staat
+```javascript
+x = d3.scaleLinear()
+    .domain([0, d3.max(fruits, d => d.count)])
+    .range([margin.left, width - margin.right])
+    .interpolate(d3.interpolateRound)
+```
+`Domain` hier is een getal. daarom kan je er ook .max voor zetten
+
+### scaleBand()
+Deze scale zet je voornamelijk op de naam. Bij een barchart zou je hier bijvoorbeeld aan kunnen geven hoe dik de chart is en het laat zien hoeveel er zijn.
+```javascript
+y = d3.scaleBand()
+    .domain(fruits.map(d => d.name))
+    .range([margin.top, height - margin.bottom])
+    .padding(0.1)
+    .round(true)
+```
+`Domain` is hier een stricte array
+
+## Animatie
+Elke keer as je een animatie maakt is het niet een foto maar een sequence van foto's over een bepaalde tijd. Deze sequence kan opgezet worden door het maken van een functie. Het genereren van een animatie op basis van een aantal punten heet tweening.
+
+Voor het maken van een transitie heb je `.transition()` nodig. Deze kan je zetten voor een `.attr` of `.style` methode. Naast deze zijn er nog een aantal andere methoden die je kan gebruiken samen met transition:
+
+**`.style`**
+Verander de style van het object
+
+**`.attr`**
+Verander een attribute van een object
+
+**`.duration`**
+De duration zet je neer in miliseconden. Hier zet je hoelang een animatie duurt
+`.duration(2000)`
+
+**`.delay`**
+Delay zet je ook neer in miliseconden. Hier zet je hoelang iets moet wachten totdat het gebeurt.
+`.delay(2000)`
+
+**`.ease`**
+Ease heeft een hoop opties. Hiermee word de snelheid veranderd van het object in de animatie.
+`.ease(d3.easeBounceOut)`
+
+### Chaining
+Je kan verschillende transitions chainen. Dit kan je doen door gewoon weer een .transition() neer te zetten. Vervolgens kan je met de delay ook nog instellen hoelang het duurt voordat de transition begint.
+
+## Joins
+Je kan .join gebruiken om de enter,update en exit simpeler uit te voeren. Een voorbeeld van join is:
+
+```javascript
+        .join(
+          enter => enter.append("text")
+            .attr("y", 17)
+            .attr("dy", "0.35em")
+            .text(d => d),
+          update => update,
+          exit => exit.remove()
+        )
+```
+
+//D3 FORCE
+D3-force is een van de vele functies binnen D3. Ik vond deze functie toen ik aan het zoeken was naar andere informatie en het zag er super gaaf uit dus ik wou meer erover weten. Het is nog best lastig maar het zou zeker handig kunnen zijn voor andere projecten!
+
+![D3 force voorbeeld](https://technology.amis.nl/wp-content/uploads/2021/05/pack-circles-around-box.gif)
+
+## Wat kan d3-force?
+- Het kan de positie en snelheid berekenen van elementen en deze elementen zwaartekracht geven op basis van een bepaalde plek.
+- D3-force werkt op basis van data en niet op basis van SVG.
+  - Je kan op basis van de berekende data van d3-force wel SVG's animeren.
+  - D3-force kan door veel stappen gaan en een final result uitgeven.
+  - Het is te gebruiken zonder enige andere d3 elementen
+
+## Hoe werk je met force?
+Er zijn 4 stappen die komen kijken bij het gebruiken van d3-force:
+- Het maken van een array met objecten
+- Het aanroepen van `forceSimulation `waarin je de array meegeeft
+- Een of meer functies toevoegen (bijv forceManyBody, forceCenter, forceCollide)
+- Een callback functie opzetten om de posities van de elementen op te zetten
+
+Voorbeeld:
+Hier maak je een simpele array met 5 objecten en geef je `forceManyBody`en `forceCenter` mee. `ForceManyBody` zorgt ervoor dat de objecten van elkaar aftoten en `forceCenter` zorgt ervoor dat de objeten aangetrokken worden naar een bepaald centraal punt.
+```javascript
+var width = 300, height = 300
+var nodes = [{}, {}, {}, {}, {}]
+
+var simulation = d3.forceSimulation(nodes)
+  .force('charge', d3.forceManyBody())
+  .force('center', d3.forceCenter(width / 2, height / 2))
+  .on('tick', ticked);
+
+function ticked() {
+  var u = d3.select('svg')
+    .selectAll('circle')
+    .data(nodes)
+    .join('circle')
+    .attr('r', 5)
+    .attr('cx', function(d) {
+      return d.x
+    })
+    .attr('cy', function(d) {
+      return d.y
+    });
+}
+```
+
+## Alle functies op een rijtje
+
+`forceCenter` (Voor het zetten van het midden van de gravitatie.)
+`forceManyBody` (Om te zorgen dat bepaalde elementen van elkaar afstoten of juist tegen elkaar aangaan.)
+`forceCollide` (Ervoor zorgen dat elementen niet over elkaar heen gaan.)
+`forceX and forceY` (Elementen attractie geven op bepaalde punten.)
+`forceLink` (Een fixed afstand geven aan elementen die ze van elkaar moeten houden.)
+
+Je kan force functies toevoegen aan de simulatie door `simulation.force('charge', d3.forceManyBody())` neer te zetten
+
+Bronnen:
+https://technology.amis.nl/frontend/introduction-to-d3-force-for-simulation-and-animation/
+https://www.d3indepth.com/force-layout/

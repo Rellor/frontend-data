@@ -38,12 +38,13 @@ d3.json('https://raw.githubusercontent.com/ajzbc/kanye.rest/master/quotes.json')
   //svg aanroepen en een groep geven. Vervolgens grotes geveb aan deze elementen
 
   const textScale = d3.scaleLinear()
-    .domain([1, 60])
+    .domain([1, d3.max(finalData, d => d.amount)])
     .range([1.2, 10])
   //scale aanmaken voor de fontsize
 
   const color = d3.scaleLinear()
-    .domain([1, 60])
+    .domain([1, d3.max(finalData, d => d.amount)])
+    //d3.max dataset
     .range([ "black", "red"])
   //scale aanmaken voor de kleur van de letters
 
