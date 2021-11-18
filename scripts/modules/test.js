@@ -1,1 +1,0 @@
-const wordsSeperate = myWords.split(" ")
