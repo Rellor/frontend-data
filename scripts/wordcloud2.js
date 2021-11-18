@@ -67,6 +67,7 @@ d3.json('https://raw.githubusercontent.com/ajzbc/kanye.rest/master/quotes.json')
       	.data(words)
         .enter().append("text")
         //g maken binnen svg, daar id aangeven en locatie aangeven van de de group. Daarna de words erin gooien en dat in text zetten.
+
           .style("fill", function(d) {
               return color(d.size)
             })
@@ -76,6 +77,7 @@ d3.json('https://raw.githubusercontent.com/ajzbc/kanye.rest/master/quotes.json')
           //font size en kleur aanpassen op basis van de ranges en domains die meegegeven waren
           .style('opacity', 0)
           //eerst de text opacity 0 maken zodat het vervolgens kan verschijnen
+
           .on('mouseover', function(d){
           const nodeSelection = d3.select(this).style('opacity', 0.5)
           nodeSelection.select("text").style('opacity', 1)
@@ -85,11 +87,13 @@ d3.json('https://raw.githubusercontent.com/ajzbc/kanye.rest/master/quotes.json')
           nodeSelection.select("text").style('opacity', 1)
           })
           //hover functie gemaakt die de text opacity aanpast
+
           .attr("text-anchor", "middle")
           .attr("transform", function(d) {
               return "translate(" + [d.x, d.y] + ")"
             })
           //woorden random locatie geven
+
           .text(function(d) { return d.text })
           .transition()
           .delay(function(d, i) {
